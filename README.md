@@ -63,6 +63,12 @@ content：待处理的html字段
 )
 ```
 
-### textToImg(texts: list, images: lisy, size: int, color: str, bg: str')
+### textToImg(texts: list, images: lisy, size: int, color: str, bg: str)
 #### 参数说明
-texts:经由
+texts:经由 imageInHtmlToText 函数处理过的文字部分(imageInHtmlToText(content)[0])
+images:经由 imageInHtmlToText 函数处理过的图片链接部分(imageInHtmlToText(content)[1])
+size:文字大小
+color:文字颜色
+bg:背景颜色
+
+注：生成的图片自动保存于程序所在目录，output.png，temp文件夹中生成的临时文件会在程序运行结束后自动删除
