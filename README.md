@@ -3,7 +3,7 @@ leetcode网站用户信息和每日一题的爬虫
 ## 使用方法
 ### 获取用户信息
 使用 getUserInfo(userSlug) 函数即可<br>
-其中userSlug可从用户leetcode主页获得
+其中userSlug可从用户leetcode主页获得（注：userSlug不是昵称，个人主页格式为https://leetcode-cn.com/u/userSlug/，可直接从链接中提取）
 
 ## 函数说明
 ### imageInHtmlToText(content: str)
@@ -62,3 +62,7 @@ content：待处理的html字段
     ]
 )
 ```
+
+### textToImg(texts: list, images: lisy, size: int, color: str, bg: str')
+#### 参数说明
+texts:经由
